@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="title">
+        <h1>Sign up</h1>
+    </div>
+    <form (ngSubmit)="register()" #registerS="ngForm">
+
+        <a class="field" for="Name">name</a>
+        <div>
+            <input type="text" class="form-control" [(ngModel)]="model.name" name="name"
+                placeholder="Nombre" required>
+        </div>
+        <a class="field" for="Surname">surname</a>
+        <div>
+            <input type="text" class="form-control" [(ngModel)]="model.surname" name="surname"
+                placeholder="Surname" required>
+        </div>
+
+        <a class="field" for="Email">email</a>
+        <div>
+            <input type="email" class="form-control" [(ngModel)]="model.mail" name="mail" placeholder="Email" required>
+        </div>
+
+        <a class="field" for="Password">password</a>
+        <div>
+            <input type="password" class="form-control" [(ngModel)]="model.password" name="password"
+                placeholder="Password" required>
+        </div>
+
+        <a class="field" for="Phone">phone</a>
+        <div>
+            <input type="text" class="form-control" [(ngModel)]="model.phone" name="phone"
+                placeholder="Teléfono" required>
+        </div>
+
+        <button [disabled]="!registerS.form.valid" type="submit" value="Register">Sign up</button>
+    </form>
+</div>

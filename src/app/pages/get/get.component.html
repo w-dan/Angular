@@ -1,0 +1,7 @@
+<div class="container">
+    <button (click)="getUsers()">show user list</button>
+    <div *ngFor="let user of users">
+          <h2 class="name"> name: {{ user.name }}</h2>
+          <h3 class="mail"> email: {{ user.mail }} </h3>
+    </div>
+</div>

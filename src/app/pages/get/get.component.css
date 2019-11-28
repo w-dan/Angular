@@ -1,0 +1,10 @@
+.container {
+    margin: auto;
+    width: 50%;
+}
+.username {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.mail {
+    font-family: Verdana, Tahoma, sans-serif;
+}

@@ -1,0 +1,6 @@
+<div class="container">
+    <button (click)="getBooks()">show books</button>
+    <div *ngFor="let book of books">
+          <h2 class="title"> title: {{ book.title }}</h2>
+    </div>
+</div>
